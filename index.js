@@ -27,7 +27,7 @@ let graf = {
       },
       // Circular options
       center: ["50%", "88%"],
-      size: "180",
+      size: "170%",
       startAngle: -100,
       endAngle: 100,
     },

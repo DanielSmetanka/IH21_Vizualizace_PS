@@ -417,6 +417,23 @@ function VypoctiMandatyPS(data, rok, klauzule, metoda) {
 function UpravDataProGraf(mandatyStran) {
   let dataProGraf = [];
 
+  mandatyStran.forEach(strana => {
+    let dataStrany = [
+      strana.nazevDlouhy,
+      strana.mandaty,
+      strana.barva,
+      strana.nazev,
+      strana.hlasyNaMandat,
+    ];
+
+    if (strana.mandaty > 0) {
+      dataProGraf.push(dataStrany);
+    }
+
+  });
+
+  return dataProGraf;
+
   while (mandatyStran.length > 0) {
     let maxIndex = 0;
     let max = 0;
