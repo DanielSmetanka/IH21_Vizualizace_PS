@@ -3,6 +3,7 @@ let metoda = 10;
 let klauzule = 0.05;
 let data;
 let chart;
+var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 let graf = {
   chart: {
     type: "item",
