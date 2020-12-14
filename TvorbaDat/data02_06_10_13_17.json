@@ -1,0 +1,878 @@
+{
+  "roky": [
+    {
+      "rok": 2017,
+      "hlasyCelkem": 5060745,
+      "kraje": [
+        {
+          "nazev": "Hlavní město Praha",
+          "hlasyCelkem": 611450,
+          "strany": [
+            99182,
+            34079,
+            30920,
+            28158,
+            12857,
+            107590,
+            77325,
+            124445,
+            29143,
+            35547
+          ]
+        },
+        {
+          "nazev": "Středočeský kraj",
+          "hlasyCelkem": 660619,
+          "strany": [
+            85415,
+            43853,
+            53368,
+            47695,
+            10679,
+            79815,
+            41843,
+            189371,
+            19925,
+            59497
+          ]
+        },
+        {
+          "nazev": "Jihočeský kraj",
+          "hlasyCelkem": 315319,
+          "strany": [
+            38232,
+            23035,
+            14435,
+            29414,
+            5303,
+            33143,
+            16713,
+            91012,
+            16983,
+            31062
+          ]
+        },
+        {
+          "nazev": "Plzeňský kraj",
+          "hlasyCelkem": 271510,
+          "strany": [
+            32833,
+            21643,
+            13180,
+            23502,
+            4138,
+            27201,
+            13095,
+            84114,
+            9499,
+            28686
+          ]
+        },
+        {
+          "nazev": "Karlovarský kraj",
+          "hlasyCelkem": 122142,
+          "strany": [
+            10796,
+            8530,
+            6453,
+            9960,
+            1544,
+            12264,
+            4495,
+            43268,
+            2885,
+            15233
+          ]
+        },
+        {
+          "nazev": "Ústecký kraj",
+          "hlasyCelkem": 339686,
+          "strany": [
+            32197,
+            22464,
+            12299,
+            33628,
+            4595,
+            28004,
+            12336,
+            127574,
+            6127,
+            42777
+          ]
+        },
+        {
+          "nazev": "Liberecký kraj",
+          "hlasyCelkem": 208817,
+          "strany": [
+            21468,
+            11811,
+            26780,
+            13981,
+            3152,
+            23859,
+            8825,
+            62302,
+            4297,
+            22878
+          ]
+        },
+        {
+          "nazev": "Královéhradecký kraj",
+          "hlasyCelkem": 278720,
+          "strany": [
+            32242,
+            18128,
+            14184,
+            19792,
+            4310,
+            29932,
+            14308,
+            88551,
+            16294,
+            28038
+          ]
+        },
+        {
+          "nazev": "Pardubický kraj",
+          "hlasyCelkem": 258169,
+          "strany": [
+            28313,
+            19294,
+            12855,
+            20002,
+            3998,
+            27146,
+            10864,
+            79551,
+            17599,
+            26202
+          ]
+        },
+        {
+          "nazev": "Kraj Vysočina",
+          "hlasyCelkem": 262764,
+          "strany": [
+            25989,
+            24631,
+            11251,
+            24829,
+            3565,
+            26086,
+            10163,
+            75247,
+            24295,
+            25237
+          ]
+        },
+        {
+          "nazev": "Jihomoravský kraj",
+          "hlasyCelkem": 583442,
+          "strany": [
+            69319,
+            49248,
+            21222,
+            46966,
+            10421,
+            53207,
+            26356,
+            159909,
+            52346,
+            67973
+          ]
+        },
+        {
+          "nazev": "Olomoucký kraj",
+          "hlasyCelkem": 305639,
+          "strany": [
+            27266,
+            22760,
+            13580,
+            26853,
+            3963,
+            25955,
+            9903,
+            95950,
+            25257,
+            41397
+          ]
+        },
+        {
+          "nazev": "Zlínský kraj",
+          "hlasyCelkem": 294679,
+          "strany": [
+            28752,
+            20454,
+            17168,
+            20669,
+            4812,
+            24859,
+            8443,
+            84750,
+            33631,
+            38020
+          ]
+        },
+        {
+          "nazev": "Moravskoslezský kraj",
+          "hlasyCelkem": 547789,
+          "strany": [
+            40944,
+            48417,
+            14462,
+            47651,
+            5892,
+            47332,
+            14142,
+            194069,
+            35362,
+            76027
+          ]
+        }
+      ],
+      "strany": [
+        { "nazev": "ODS", "hlasy": 572948, "barva": "#" },
+        { "nazev": "ČSSD", "hlasy": 368347, "barva": "#" },
+        { "nazev": "STAN", "hlasy": 262157, "barva": "#" },
+        { "nazev": "KSČM", "hlasy": 393100, "barva": "#" },
+        { "nazev": "Svobodní", "hlasy": 79229, "barva": "#" },
+        { "nazev": "Piráti", "hlasy": 546393, "barva": "#" },
+        { "nazev": "TOP 09", "hlasy": 268811, "barva": "#" },
+        { "nazev": "ANO", "hlasy": 1500113, "barva": "#" },
+        { "nazev": "KDU-ČSL", "hlasy": 293643, "barva": "#" },
+        { "nazev": "SPD", "hlasy": 538574, "barva": "#" }
+      ]
+    },
+    {
+      "rok": 2013,
+      "hlasyCelkem": 4969984,
+      "kraje": [
+        {
+          "nazev": "Hlavní město Praha",
+          "hlasyCelkem": 586509,
+          "strany": [
+            82668,
+            21915,
+            21327,
+            135100,
+            70378,
+            32051,
+            5427,
+            18758,
+            96564,
+            49975,
+            37888
+          ]
+        },
+        {
+          "nazev": "Středočeský kraj",
+          "hlasyCelkem": 627492,
+          "strany": [
+            115756,
+            16880,
+            17369,
+            91926,
+            55594,
+            25473,
+            6881,
+            39714,
+            125984,
+            90478,
+            23246
+          ]
+        },
+        {
+          "nazev": "Jihočeský kraj",
+          "hlasyCelkem": 311171,
+          "strany": [
+            64535,
+            7229,
+            7382,
+            39760,
+            25166,
+            20749,
+            3267,
+            22023,
+            52810,
+            51193,
+            7667
+          ]
+        },
+        {
+          "nazev": "Plzeňský kraj",
+          "hlasyCelkem": 263425,
+          "strany": [
+            57057,
+            5970,
+            8415,
+            29696,
+            28036,
+            12781,
+            2519,
+            14673,
+            48808,
+            41529,
+            6033
+          ]
+        },
+        {
+          "nazev": "Karlovarský kraj",
+          "hlasyCelkem": 122673,
+          "strany": [
+            26185,
+            2393,
+            3893,
+            12374,
+            8255,
+            4126,
+            1585,
+            10225,
+            26157,
+            20520,
+            2802
+          ]
+        },
+        {
+          "nazev": "Ústecký kraj",
+          "hlasyCelkem": 338082,
+          "strany": [
+            70233,
+            7418,
+            7869,
+            28746,
+            21130,
+            7520,
+            5136,
+            25845,
+            71986,
+            68758,
+            9082
+          ]
+        },
+        {
+          "nazev": "Liberecký kraj",
+          "hlasyCelkem": 202451,
+          "strany": [
+            34195,
+            4899,
+            6713,
+            30867,
+            14087,
+            6108,
+            2743,
+            16145,
+            43727,
+            29132,
+            5146
+          ]
+        },
+        {
+          "nazev": "Královéhradecký kraj",
+          "hlasyCelkem": 273891,
+          "strany": [
+            50870,
+            7303,
+            6744,
+            35360,
+            19933,
+            18610,
+            3065,
+            22132,
+            55548,
+            38564,
+            7873
+          ]
+        },
+        {
+          "nazev": "Pardubický kraj",
+          "hlasyCelkem": 255603,
+          "strany": [
+            52499,
+            5962,
+            6843,
+            27643,
+            18167,
+            19693,
+            5321,
+            17523,
+            50677,
+            37378,
+            6473
+          ]
+        },
+        {
+          "nazev": "Kraj Vysočina",
+          "hlasyCelkem": 262032,
+          "strany": [
+            60313,
+            5332,
+            6175,
+            23769,
+            17912,
+            27643,
+            4804,
+            17938,
+            41662,
+            44197,
+            6818
+          ]
+        },
+        {
+          "nazev": "Jihomoravský kraj",
+          "hlasyCelkem": 573857,
+          "strany": [
+            131684,
+            14868,
+            14110,
+            56224,
+            40255,
+            58928,
+            9714,
+            37258,
+            99509,
+            82414,
+            18780
+          ]
+        },
+        {
+          "nazev": "Olomoucký kraj",
+          "hlasyCelkem": 304844,
+          "strany": [
+            67751,
+            5910,
+            6744,
+            23609,
+            18407,
+            24210,
+            4719,
+            27032,
+            59808,
+            51922,
+            7097
+          ]
+        },
+        {
+          "nazev": "Zlínský kraj",
+          "hlasyCelkem": 295334,
+          "strany": [
+            57281,
+            7035,
+            5884,
+            27225,
+            16722,
+            39047,
+            7815,
+            30056,
+            54089,
+            38099,
+            6912
+          ]
+        },
+        {
+          "nazev": "Moravskoslezský kraj",
+          "hlasyCelkem": 552620,
+          "strany": [
+            145802,
+            9450,
+            12949,
+            34058,
+            30132,
+            40031,
+            12117,
+            43017,
+            99911,
+            96885,
+            13208
+          ]
+        }
+      ],
+      "strany": [
+        { "nazev": "ČSSD", "hlasy": 1016829, "barva": "#" },
+        { "nazev": "Svobodní", "hlasy": 122564, "barva": "#" },
+        { "nazev": "Piráti", "hlasy": 132417, "barva": "#" },
+        { "nazev": "TOP 09", "hlasy": 596357, "barva": "#" },
+        { "nazev": "ODS", "hlasy": 384174, "barva": "#" },
+        { "nazev": "KDU-ČSL", "hlasy": 336970, "barva": "#" },
+        { "nazev": "SPOZ", "hlasy": 75113, "barva": "#" },
+        { "nazev": "Úsvit", "hlasy": 342339, "barva": "#" },
+        { "nazev": "ANO 2011", "hlasy": 927240, "barva": "#" },
+        { "nazev": "KSČM", "hlasy": 741044, "barva": "#" },
+        { "nazev": "SZ", "hlasy": 159025, "barva": "#" }
+      ]
+    },
+    {
+      "rok": 2010,
+      "hlasyCelkem": 5230859,
+      "kraje": [
+        {
+          "nazev": "Hlavní město Praha",
+          "hlasyCelkem": 637328,
+          "strany": [
+            65742,
+            41647,
+            96706,
+            19851,
+            173840,
+            13837,
+            30528,
+            14599,
+            158014
+          ]
+        },
+        {
+          "nazev": "Středočeský kraj",
+          "hlasyCelkem": 630203,
+          "strany": [
+            67601,
+            69368,
+            129368,
+            23235,
+            110865,
+            12430,
+            14656,
+            27430,
+            150465
+          ]
+        },
+        {
+          "nazev": "Jihočeský kraj",
+          "hlasyCelkem": 333117,
+          "strany": [
+            35541,
+            40738,
+            68468,
+            13736,
+            57937,
+            12558,
+            7233,
+            12523,
+            71173
+          ]
+        },
+        {
+          "nazev": "Plzeňský kraj",
+          "hlasyCelkem": 280264,
+          "strany": [
+            27378,
+            35077,
+            61688,
+            11605,
+            47584,
+            6820,
+            4811,
+            14797,
+            59253
+          ]
+        },
+        {
+          "nazev": "Karlovarský kraj",
+          "hlasyCelkem": 130162,
+          "strany": [15404, 17015, 30324, 4472, 21096, 2169, 2718, 6284, 23037]
+        },
+        {
+          "nazev": "Ústecký kraj",
+          "hlasyCelkem": 365800,
+          "strany": [
+            42587,
+            49900,
+            91214,
+            19841,
+            48545,
+            4034,
+            8830,
+            18980,
+            63605
+          ]
+        },
+        {
+          "nazev": "Liberecký kraj",
+          "hlasyCelkem": 213917,
+          "strany": [27374, 22086, 41512, 8373, 41594, 3785, 5574, 9674, 43789]
+        },
+        {
+          "nazev": "Královéhradecký kraj",
+          "hlasyCelkem": 288981,
+          "strany": [
+            35425,
+            30791,
+            57427,
+            10825,
+            55615,
+            10956,
+            7237,
+            10817,
+            58165
+          ]
+        },
+        {
+          "nazev": "Pardubický kraj",
+          "hlasyCelkem": 268863,
+          "strany": [
+            31265,
+            30161,
+            59040,
+            14073,
+            41558,
+            15962,
+            5023,
+            9557,
+            52220
+          ]
+        },
+        {
+          "nazev": "Vysočina",
+          "hlasyCelkem": 270872,
+          "strany": [
+            26851,
+            36349,
+            63486,
+            16484,
+            38866,
+            20110,
+            4551,
+            8393,
+            46657
+          ]
+        },
+        {
+          "nazev": "Jihomoravský kraj",
+          "hlasyCelkem": 597136,
+          "strany": [
+            58251,
+            69577,
+            139476,
+            25214,
+            91433,
+            50000,
+            14028,
+            15588,
+            110321
+          ]
+        },
+        {
+          "nazev": "Olomoucký kraj",
+          "hlasyCelkem": 321871,
+          "strany": [
+            37429,
+            42438,
+            78786,
+            14454,
+            43516,
+            18041,
+            5805,
+            12024,
+            54769
+          ]
+        },
+        {
+          "nazev": "Zlínský kraj",
+          "hlasyCelkem": 308592,
+          "strany": [
+            29984,
+            30991,
+            67691,
+            18078,
+            43028,
+            30714,
+            5555,
+            7638,
+            64222
+          ]
+        },
+        {
+          "nazev": "Moravskoslezský kraj",
+          "hlasyCelkem": 583753,
+          "strany": [
+            68295,
+            73627,
+            170081,
+            26286,
+            58356,
+            28301,
+            11282,
+            23841,
+            102102
+          ]
+        }
+      ],
+      "strany": [
+        { "nazev": "VV", "hlasy": 569127, "barva": "#" },
+        { "nazev": "KSČM", "hlasy": 589765, "barva": "#" },
+        { "nazev": "ČSSD", "hlasy": 1155267, "barva": "#" },
+        { "nazev": "SPOZ", "hlasy": 226527, "barva": "#" },
+        { "nazev": "TOP 09", "hlasy": 873833, "barva": "#" },
+        { "nazev": "KDU-ČSL", "hlasy": 229717, "barva": "#" },
+        { "nazev": "SZ", "hlasy": 127831, "barva": "#" },
+        { "nazev": "Suverenita", "hlasy": 192145, "barva": "#" },
+        { "nazev": "ODS", "hlasy": 1057792, "barva": "#" }
+      ]
+    },
+    {
+      "rok": 2006,
+      "hlasyCelkem": 5348976,
+      "kraje": [
+        {
+          "nazev": "Hlavní město Praha",
+          "hlasyCelkem": 656495,
+          "strany": [317224, 152962, 23386, 60384, 51925, 31820]
+        },
+        {
+          "nazev": "Středočeský kraj",
+          "hlasyCelkem": 620047,
+          "strany": [243012, 190607, 13055, 37219, 79964, 30207]
+        },
+        {
+          "nazev": "Jihočeský kraj",
+          "hlasyCelkem": 337387,
+          "strany": [123804, 102833, 6570, 19924, 45099, 27630]
+        },
+        {
+          "nazev": "Plzeňský kraj",
+          "hlasyCelkem": 289049,
+          "strany": [105391, 91606, 5912, 17090, 40578, 16338]
+        },
+        {
+          "nazev": "Karlovarský kraj",
+          "hlasyCelkem": 137117,
+          "strany": [49189, 44887, 2312, 9206, 20323, 4723]
+        },
+        {
+          "nazev": "Ústecký kraj",
+          "hlasyCelkem": 374736,
+          "strany": [130365, 132895, 5372, 22616, 60175, 8365]
+        },
+        {
+          "nazev": "Liberecký kraj",
+          "hlasyCelkem": 215510,
+          "strany": [83647, 63181, 4304, 20646, 24823, 9131]
+        },
+        {
+          "nazev": "Královéhradecký kraj",
+          "hlasyCelkem": 295931,
+          "strany": [111466, 89204, 9126, 19819, 34093, 19893]
+        },
+        {
+          "nazev": "Pardubický kraj",
+          "hlasyCelkem": 273921,
+          "strany": [91113, 90268, 6641, 17148, 33956, 24023]
+        },
+        {
+          "nazev": "Vysočina",
+          "hlasyCelkem": 275997,
+          "strany": [76393, 97568, 5525, 13514, 40480, 33587]
+        },
+        {
+          "nazev": "Jihomoravský kraj",
+          "hlasyCelkem": 608804,
+          "strany": [186779, 200619, 7343, 37771, 83687, 67865]
+        },
+        {
+          "nazev": "Olomoucký kraj",
+          "hlasyCelkem": 333849,
+          "strany": [101151, 118334, 3821, 18398, 49026, 27609]
+        },
+        {
+          "nazev": "Zlínský kraj",
+          "hlasyCelkem": 319933,
+          "strany": [101376, 106481, 6390, 16224, 35998, 41663]
+        },
+        {
+          "nazev": "Moravskoslezský kraj",
+          "hlasyCelkem": 610200,
+          "strany": [171565, 247382, 11967, 26528, 85201, 43852]
+        }
+      ],
+      "strany": [
+        { "nazev": "ODS", "hlasy": 1892475, "barva": "#" },
+        { "nazev": "ČSSD", "hlasy": 1728827, "barva": "#" },
+        { "nazev": "SNK ED", "hlasy": 111724, "barva": "#" },
+        { "nazev": "SZ", "hlasy": 336487, "barva": "#" },
+        { "nazev": "KSČM", "hlasy": 685328, "barva": "#" },
+        { "nazev": "KDU-ČSL", "hlasy": 386706, "barva": "#" }
+      ]
+    },
+    {
+      "rok": 2002,
+      "hlasyCelkem": 4768006,
+      "kraje": [
+        {
+          "nazev": "Hlavní město Praha",
+          "hlasyCelkem": 586459,
+          "strany": [151628, 12543, 198431, 65136, 108316, 14736]
+        },
+        {
+          "nazev": "Středočeský kraj",
+          "hlasyCelkem": 537201,
+          "strany": [169381, 10362, 144176, 100312, 63971, 12697]
+        },
+        {
+          "nazev": "Jihočeský kraj",
+          "hlasyCelkem": 290888,
+          "strany": [88232, 10242, 75599, 53098, 35637, 6029]
+        },
+        {
+          "nazev": "Plzeňský kraj",
+          "hlasyCelkem": 259470,
+          "strany": [78733, 7450, 66188, 50893, 30516, 6051]
+        },
+        {
+          "nazev": "Karlovarský kraj",
+          "hlasyCelkem": 121140,
+          "strany": [35517, 2144, 29916, 26626, 10725, 3988]
+        },
+        {
+          "nazev": "Ústecký kraj",
+          "hlasyCelkem": 334662,
+          "strany": [97684, 9074, 81049, 83951, 26169, 9061]
+        },
+        {
+          "nazev": "Liberecký kraj",
+          "hlasyCelkem": 189441,
+          "strany": [51260, 6440, 51920, 32542, 25096, 5234]
+        },
+        {
+          "nazev": "Královéhradecký kraj",
+          "hlasyCelkem": 267341,
+          "strany": [73478, 9252, 71074, 42928, 38665, 6088]
+        },
+        {
+          "nazev": "Pardubický kraj",
+          "hlasyCelkem": 245335,
+          "strany": [72270, 7511, 56177, 42664, 41209, 5148]
+        },
+        {
+          "nazev": "Vysočina",
+          "hlasyCelkem": 254808,
+          "strany": [81471, 8186, 49098, 50185, 43123, 5015]
+        },
+        {
+          "nazev": "Jihomoravský kraj",
+          "hlasyCelkem": 550759,
+          "strany": [164717, 14720, 115401, 108819, 95563, 13531]
+        },
+        {
+          "nazev": "Olomoucký kraj",
+          "hlasyCelkem": 298763,
+          "strany": [95370, 9489, 60791, 62804, 41675, 7654]
+        },
+        {
+          "nazev": "Zlínský kraj",
+          "hlasyCelkem": 283192,
+          "strany": [82313, 9566, 60838, 47134, 55113, 6748]
+        },
+        {
+          "nazev": "Moravskoslezský kraj",
+          "hlasyCelkem": 548547,
+          "strany": [198225, 15720, 106317, 115561, 64893, 10949]
+        }
+      ],
+      "strany": [
+        { "nazev": "ČSSD", "hlasy": 1440279, "barva": "#" },
+        { "nazev": "SN", "hlasy": 132699, "barva": "#" },
+        { "nazev": "ODS", "hlasy": 1166975, "barva": "#" },
+        { "nazev": "KSČM", "hlasy": 882653, "barva": "#" },
+        { "nazev": "KDU-ČSL & US-DEU", "hlasy": 680671, "barva": "#" },
+        { "nazev": "SZ", "hlasy": 112929, "barva": "#" }
+      ]
+    }
+  ]
+}
