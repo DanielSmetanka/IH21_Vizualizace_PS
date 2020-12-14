@@ -2,6 +2,7 @@ let rok = 2017;
 let metoda = 10;
 let klauzule = 0.05;
 let data;
+let chart;
 let graf = {
   chart: {
     type: "item",
@@ -43,12 +44,12 @@ fetch("./data.json")
   });
 
 function VykresliGraf(graf) {
-  Highcharts.chart("container", graf);
+  chart = Highcharts.chart("container", graf);
 }
 
 function NahrajNovaData(dataProGraf, nazev) {
-  Highcharts.charts[0].series[0].update({ data: dataProGraf });
-  Highcharts.charts[0].title.update({ text: nazev });
+  chart.series[0].update({ data: dataProGraf });
+  chart.title.update({ text: nazev });
 }
 
 function PripravGraf(data, graf, rok, metoda, klauzule) {
@@ -70,6 +71,8 @@ function AktualizujGraf() {
 
 function ZmenaRoku(element) {
   rok = parseInt(element.value);
+  PripravGraf(data, graf, rok, metoda, klauzule);
+  VykresliGraf(graf);
   AktualizujGraf();
 }
 
