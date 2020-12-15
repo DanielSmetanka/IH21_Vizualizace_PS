@@ -15,12 +15,12 @@ let graf = {
 
   legend: {
     labelFormat:
-      '{name} <span style="opacity: 0.8">{y} ({hlasuNaMandat} hl/m)</span>',
+      '{name} <span style="opacity: 0.8">{y} ({hlasuNaMandat} hlasů na 1 mandát)</span>',
   },
 
   series: [
     {
-      name: "Počet sedadel",
+      name: "Počet mandátů",
       keys: ["name", "y", "color", "label", "hlasuNaMandat"],
       data: [],
       dataLabels: {
@@ -36,6 +36,7 @@ let graf = {
   ],
 };
 
+
 fetch("./data.json")
   .then((resp) => resp.json())
   .then((dataJSON) => {
@@ -45,7 +46,7 @@ fetch("./data.json")
   });
 
 function VykresliGraf(graf) {
-  chart = Highcharts.chart("container", graf);
+  chart = Highcharts.chart("chart", graf);
 }
 
 function NahrajNovaData(dataProGraf, nazev) {
@@ -55,11 +56,22 @@ function NahrajNovaData(dataProGraf, nazev) {
 
 function PripravGraf(data, graf, rok, metoda, klauzule) {
   graf.series[0].data = VypoctiMandatyPS(data, rok, klauzule, metoda);
+  UpravDleSirky(graf, width);
+}
+
+function UpravDleSirky(graf, width){
+  width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+  if (width < 500) {
+    graf.series[0].dataLabels.enabled = false } else {
+      graf.series[0].dataLabels.enabled = true
+    }
 }
 
 function AktualizujGraf() {
   let dataProGraf = VypoctiMandatyPS(data, rok, klauzule, metoda);
   let nazev;
+
+  UpravDleSirky(graf, width);
 
   if (dataProGraf.length == 0) {
     nazev = "Žádná strana se nedostala do poslenecké sněmovny!";

@@ -1,0 +1,338 @@
+{
+    "rok": 2021,
+    "hlasyCelkem": 0,
+    "kraje": [
+      {
+        "nazev": "Hlavní město Praha",
+        "hlasyCelkem": 0,
+        "strany": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+      },
+      {
+        "nazev": "Středočeský kraj",
+        "hlasyCelkem": 0,
+        "strany": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+      },
+      {
+        "nazev": "Jihočeský kraj",
+        "hlasyCelkem": 0,
+        "strany": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+      },
+      {
+        "nazev": "Plzeňský kraj",
+        "hlasyCelkem": 0,
+        "strany": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+      },
+      {
+        "nazev": "Karlovarský kraj",
+        "hlasyCelkem": 0,
+        "strany": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+      },
+      {
+        "nazev": "Ústecký kraj",
+        "hlasyCelkem": 0,
+        "strany": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+      },
+      {
+        "nazev": "Liberecký kraj",
+        "hlasyCelkem": 0,
+        "strany": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+      },
+      {
+        "nazev": "Královéhradecký kraj",
+        "hlasyCelkem": 0,
+        "strany": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+      },
+      {
+        "nazev": "Pardubický kraj",
+        "hlasyCelkem": 0,
+        "strany": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+      },
+      {
+        "nazev": "Kraj Vysočina",
+        "hlasyCelkem": 0,
+        "strany": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+      },
+      {
+        "nazev": "Jihomoravský kraj",
+        "hlasyCelkem": 0,
+        "strany": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+      },
+      {
+        "nazev": "Olomoucký kraj",
+        "hlasyCelkem": 0,
+        "strany": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+      },
+      {
+        "nazev": "Zlínský kraj",
+        "hlasyCelkem": 0,
+        "strany": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+      },
+      {
+        "nazev": "Moravskoslezský kraj",
+        "hlasyCelkem": 0,
+        "strany": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+      }
+    ],
+    "strany": [
+      {
+        "nazev": "",
+        "hlasy": 0,
+        "barva": "#000000",
+        "nazevDlouhy": "",
+        "pocetSubjektu": 1 
+      },
+      {
+        "nazev": "",
+        "hlasy": 0,
+        "barva": "#000000",
+        "nazevDlouhy": "",
+        "pocetSubjektu": 1 
+      },
+      {
+        "nazev": "",
+        "hlasy": 0,
+        "barva": "#000000",
+        "nazevDlouhy": "",
+        "pocetSubjektu": 1 
+      },
+      {
+        "nazev": "",
+        "hlasy": 0,
+        "barva": "#000000",
+        "nazevDlouhy": "",
+        "pocetSubjektu": 1 
+      },
+      {
+        "nazev": "",
+        "hlasy": 0,
+        "barva": "#000000",
+        "nazevDlouhy": "",
+        "pocetSubjektu": 1 
+      },
+      {
+        "nazev": "",
+        "hlasy": 0,
+        "barva": "#000000",
+        "nazevDlouhy": "",
+        "pocetSubjektu": 1 
+      },
+      {
+        "nazev": "",
+        "hlasy": 0,
+        "barva": "#000000",
+        "nazevDlouhy": "",
+        "pocetSubjektu": 1 
+      },
+      {
+        "nazev": "",
+        "hlasy": 0,
+        "barva": "#000000",
+        "nazevDlouhy": "",
+        "pocetSubjektu": 1 
+      },
+      {
+        "nazev": "",
+        "hlasy": 0,
+        "barva": "#000000",
+        "nazevDlouhy": "",
+        "pocetSubjektu": 1 
+      },
+      {
+        "nazev": "",
+        "hlasy": 0,
+        "barva": "#000000",
+        "nazevDlouhy": "",
+        "pocetSubjektu": 1 
+      },
+      {
+        "nazev": "",
+        "hlasy": 0,
+        "barva": "#000000",
+        "nazevDlouhy": "",
+        "pocetSubjektu": 1 
+      },
+      {
+        "nazev": "",
+        "hlasy": 0,
+        "barva": "#000000",
+        "nazevDlouhy": "",
+        "pocetSubjektu": 1 
+      }
+    ]
+  }

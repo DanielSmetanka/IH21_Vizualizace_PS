@@ -259,7 +259,7 @@
           "pocetSubjektu": 1
         },
         {
-          "nazev": "Svobodní",
+          "nazev": "Sv.",
           "hlasy": 79229,
           "barva": "#01654E",
           "nazevDlouhy": "Svobodní",
@@ -287,7 +287,7 @@
           "pocetSubjektu": 1
         },
         {
-          "nazev": "KDU-ČSL",
+          "nazev": "KDU",
           "hlasy": 293643,
           "barva": "#FFD701",
           "nazevDlouhy": "KDU-ČSL",
@@ -554,7 +554,7 @@
           "pocetSubjektu": 1
         },
         {
-          "nazev": "Svobodní",
+          "nazev": "Sv.",
           "hlasy": 122564,
           "barva": "#01654E",
           "nazevDlouhy": "Svobodní",
@@ -582,7 +582,7 @@
           "pocetSubjektu": 1
         },
         {
-          "nazev": "KDU-ČSL",
+          "nazev": "KDU",
           "hlasy": 336970,
           "barva": "#FFD701",
           "nazevDlouhy": "KDU-ČSL",
@@ -592,7 +592,7 @@
           "nazev": "SPOZ",
           "hlasy": 75113,
           "barva": "#E2725B",
-          "nazevDlouhy": "SPO Zemanovci",
+          "nazevDlouhy": "Zemanovci",
           "pocetSubjektu": 1
         },
         {
@@ -620,7 +620,7 @@
           "nazev": "SZ",
           "hlasy": 159025,
           "barva": "#78DE20",
-          "nazevDlouhy": "Strana zelených",
+          "nazevDlouhy": "Zelení",
           "pocetSubjektu": 1
         }
       ]
@@ -846,7 +846,7 @@
           "nazev": "SPOZ",
           "hlasy": 226527,
           "barva": "#E2725B",
-          "nazevDlouhy": "SPO Zemanovci",
+          "nazevDlouhy": "Zemanovci",
           "pocetSubjektu": 1
         },
         {
@@ -857,7 +857,7 @@
           "pocetSubjektu": 1
         },
         {
-          "nazev": "KDU-ČSL",
+          "nazev": "KDU",
           "hlasy": 229717,
           "barva": "#FFD701",
           "nazevDlouhy": "KDU-ČSL",
@@ -867,11 +867,11 @@
           "nazev": "SZ",
           "hlasy": 127831,
           "barva": "#78DE20",
-          "nazevDlouhy": "Strana zelených",
+          "nazevDlouhy": "Zelení",
           "pocetSubjektu": 1
         },
         {
-          "nazev": "Suver.",
+          "nazev": "Suv.",
           "hlasy": 192145,
           "barva": "#CEE0F2",
           "nazevDlouhy": "Suverenita",
@@ -980,14 +980,14 @@
           "nazev": "SNK ED",
           "hlasy": 111724,
           "barva": "#055CA1",
-          "nazevDlouhy": "SNK Evropští demokraté",
+          "nazevDlouhy": "Evr. demokraté",
           "pocetSubjektu": 1
         },
         {
           "nazev": "SZ",
           "hlasy": 336487,
           "barva": "#78DE20",
-          "nazevDlouhy": "Strana zelených",
+          "nazevDlouhy": "Zelení",
           "pocetSubjektu": 1
         },
         {
@@ -998,7 +998,7 @@
           "pocetSubjektu": 1
         },
         {
-          "nazev": "KDU-ČSL",
+          "nazev": "KDU",
           "hlasy": 386706,
           "barva": "#FFD701",
           "nazevDlouhy": "KDU-ČSL",
@@ -1093,7 +1093,7 @@
           "nazev": "SN",
           "hlasy": 132699,
           "barva": "#055CA1",
-          "nazevDlouhy": "Sdružení nezávislých",
+          "nazevDlouhy": "Sdruž. nezávislých",
           "pocetSubjektu": 1
         },
         {
@@ -1111,7 +1111,7 @@
           "pocetSubjektu": 1
         },
         {
-          "nazev": "KDU-ČSL & US-DEU",
+          "nazev": "KDU & US",
           "hlasy": 680671,
           "barva": "#FFD701",
           "nazevDlouhy": "KDU-ČSL & US-DEU",
@@ -1121,7 +1121,7 @@
           "nazev": "SZ",
           "hlasy": 112929,
           "barva": "#78DE20",
-          "nazevDlouhy": "Strana zelených",
+          "nazevDlouhy": "Zelení",
           "pocetSubjektu": 1
         }
       ]
@@ -1173,7 +1173,7 @@
       ],
       "strany": [
         {
-          "nazev": "KDU-ČSL",
+          "nazev": "KDU",
           "hlasy": 537013,
           "barva": "#FFD701",
           "nazevDlouhy": "KDU-ČSL",
@@ -1204,7 +1204,7 @@
           "nazev": "SPR-RSČ",
           "hlasy": 232965,
           "barva": "#003153",
-          "nazevDlouhy": "Sdruž.pro rep.-Republ.str.Čsl.",
+          "nazevDlouhy": "SPR-RSČ",
           "pocetSubjektu": 1
         },
         {
@@ -1218,7 +1218,7 @@
           "nazev": "DŽJ",
           "hlasy": 182900,
           "barva": "#FF9999",
-          "nazevDlouhy": "Důchodci za životní jistoty",
+          "nazevDlouhy": "DŽJ",
           "pocetSubjektu": 1
         }
       ]
@@ -1381,11 +1381,11 @@
           "nazev": "ODA",
           "hlasy": 385369,
           "barva": "#027BA7",
-          "nazevDlouhy": "Občanská demokratická aliance",
+          "nazevDlouhy": "Ob. dem. aliance",
           "pocetSubjektu": 1
         },
         {
-          "nazev": "KDU-ČSL",
+          "nazev": "KDU",
           "hlasy": 489349,
           "barva": "#FFD701",
           "nazevDlouhy": "KDU-ČSL",
@@ -1395,7 +1395,7 @@
           "nazev": "DŽJ",
           "hlasy": 187455,
           "barva": "#FF9999",
-          "nazevDlouhy": "Důchodci za životní jistoty",
+          "nazevDlouhy": "DŽJ",
           "pocetSubjektu": 1
         },
         {
@@ -1409,7 +1409,7 @@
           "nazev": "SPR-RSČ",
           "hlasy": 485072,
           "barva": "#003153",
-          "nazevDlouhy": "Sdruž. pro rep.-Republ.str.Čsl.",
+          "nazevDlouhy": "SPR-RSČ",
           "pocetSubjektu": 1
         }
       ]
