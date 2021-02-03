@@ -10,7 +10,7 @@ let graf = {
   },
 
   title: {
-    text: "Vizualizace poslanecké sněmovny",
+    text: "Vizualizace Poslanecké sněmovny",
   },
 
   legend: {
@@ -20,7 +20,7 @@ let graf = {
 
   series: [
     {
-      name: "Počet mandátů",
+      name: "Počet křesel",
       keys: ["name", "y", "color", "label", "hlasuNaMandat"],
       data: [],
       dataLabels: {

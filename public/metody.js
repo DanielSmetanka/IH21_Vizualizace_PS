@@ -414,16 +414,30 @@ function VypoctiMandatyPS(data, rok, klauzule, metoda) {
   return UpravDataProGraf(mandatyStran);
 }
 
+function FormatujCislo(cislo){
+  if (cislo < 1000) {
+    return cislo;
+  }
+
+  let jednotky = cislo % 1000;
+
+  let tisice = Math.floor(cislo / 1000);
+
+  return tisice + " " + jednotky;
+ }
+
 function UpravDataProGraf(mandatyStran) {
   let dataProGraf = [];
 
   mandatyStran.forEach(strana => {
+
+
     let dataStrany = [
       strana.nazevDlouhy,
       strana.mandaty,
       strana.barva,
       strana.nazev,
-      strana.hlasyNaMandat,
+      FormatujCislo(strana.hlasyNaMandat)
     ];
 
     if (strana.mandaty > 0) {
