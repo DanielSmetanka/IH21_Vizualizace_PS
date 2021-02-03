@@ -414,39 +414,30 @@ function VypoctiMandatyPS(data, rok, klauzule, metoda) {
   return UpravDataProGraf(mandatyStran);
 }
 
-function FormatujCislo(cislo){
-  if (cislo < 1000) {
-    return cislo;
+function FormatujCislo(num){
+  let cislo = num;
+  
+  let mil = Math.floor(cislo / 1000000);
+
+  cislo %= 1000000;
+
+  let tis = Math.floor(cislo / 1000);
+
+  cislo %= 1000;
+
+  let jed = cislo;
+
+  if (num >= 1000000) {
+    return mil + " " + tis + " " + jed;
+  } else if (num >= 1000) {
+    return tis + " " + jed;
+  } else {
+    return jed;
   }
-
-  let jednotky = cislo % 1000;
-
-  let tisice = Math.floor(cislo / 1000);
-
-  return tisice + " " + jednotky;
  }
 
 function UpravDataProGraf(mandatyStran) {
   let dataProGraf = [];
-
-  mandatyStran.forEach(strana => {
-
-
-    let dataStrany = [
-      strana.nazevDlouhy,
-      strana.mandaty,
-      strana.barva,
-      strana.nazev,
-      FormatujCislo(strana.hlasyNaMandat)
-    ];
-
-    if (strana.mandaty > 0) {
-      dataProGraf.push(dataStrany);
-    }
-
-  });
-
-  return dataProGraf;
 
   while (mandatyStran.length > 0) {
     let maxIndex = 0;
@@ -467,7 +458,7 @@ function UpravDataProGraf(mandatyStran) {
       strana.mandaty,
       strana.barva,
       strana.nazev,
-      strana.hlasyNaMandat,
+      FormatujCislo(strana.hlasyNaMandat)
     ];
 
     if (strana.mandaty > 0) {
@@ -476,6 +467,25 @@ function UpravDataProGraf(mandatyStran) {
 
     mandatyStran.splice(maxIndex, 1);
   }
+
+  return dataProGraf;
+
+  mandatyStran.forEach(strana => {
+
+
+    let dataStrany = [
+      strana.nazevDlouhy,
+      strana.mandaty,
+      strana.barva,
+      strana.nazev,
+      FormatujCislo(strana.hlasyNaMandat)
+    ];
+
+    if (strana.mandaty > 0) {
+      dataProGraf.push(dataStrany);
+    }
+
+  });
 
   return dataProGraf;
 }

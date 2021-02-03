@@ -91,10 +91,14 @@ function ZmenaRoku(element) {
 
 function ZmenaMetody(element) {
   metoda = parseInt(element.value);
+  PripravGraf(data, graf, rok, metoda, klauzule);
+  VykresliGraf(graf);
   AktualizujGraf();
 }
 
 function ZmenaKlauzule(element) {
   klauzule = parseFloat(element.value) / 100;
+  PripravGraf(data, graf, rok, metoda, klauzule);
+  VykresliGraf(graf);
   AktualizujGraf();
 }
