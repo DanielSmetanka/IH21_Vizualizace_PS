@@ -62,9 +62,10 @@
               value="5"
               id="klauzule"
               step="0.5"
-              min="1.5"
+              min="0"
               max="30"
               onchange="ZmenaKlauzule(this)"
+              oninput="ZmenaKlauzule(this)"
             />
             <div class="input-group-append">
               <span class="input-group-text">%</span>
@@ -72,13 +73,12 @@
           </div>
         </div>
       </div>
-      <div id="chart" style="width: 95%; height: 350px;"></div>
+      <div id="chart" style="width: 95%; height: 350px"></div>
       <div id="logo">
-        <a href="https://www.ih21.org">
-      <img src="H21_logo.png" class="img-fluid" alt="Responsive image">
-    </a>
+        <a target="_parent" href="https://www.ih21.org">
+          <img src="H21_logo.png" class="img-fluid" alt="Responsive image" />
+        </a>
       </div>
-
     </div>
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/modules/item-series.js"></script>

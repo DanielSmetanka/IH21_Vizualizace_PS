@@ -415,25 +415,7 @@ function VypoctiMandatyPS(data, rok, klauzule, metoda) {
 }
 
 function FormatujCislo(num){
-  let cislo = num;
-  
-  let mil = Math.floor(cislo / 1000000);
-
-  cislo %= 1000000;
-
-  let tis = Math.floor(cislo / 1000);
-
-  cislo %= 1000;
-
-  let jed = cislo;
-
-  if (num >= 1000000) {
-    return mil + " " + tis + " " + jed;
-  } else if (num >= 1000) {
-    return tis + " " + jed;
-  } else {
-    return jed;
-  }
+    return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1 ')
  }
 
 function UpravDataProGraf(mandatyStran) {

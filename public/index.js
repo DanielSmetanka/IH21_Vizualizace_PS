@@ -74,9 +74,9 @@ function AktualizujGraf() {
   UpravDleSirky(graf, width);
 
   if (dataProGraf.length == 0) {
-    nazev = "Žádná strana se nedostala do poslenecké sněmovny!";
+    nazev = "Žádná strana se nedostala do Poslenecké sněmovny.";
   } else {
-    nazev = "Vizualizace poslanecké sněmovny";
+    nazev = "Vizualizace Poslanecké sněmovny";
   }
 
   NahrajNovaData(dataProGraf, nazev);
@@ -97,7 +97,11 @@ function ZmenaMetody(element) {
 }
 
 function ZmenaKlauzule(element) {
+  if (element.value == "") {
+    klauzule = 0;
+  }else{
   klauzule = parseFloat(element.value) / 100;
+  }
   PripravGraf(data, graf, rok, metoda, klauzule);
   VykresliGraf(graf);
   AktualizujGraf();
