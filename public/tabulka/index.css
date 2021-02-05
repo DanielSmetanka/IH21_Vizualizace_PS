@@ -1,0 +1,27 @@
+#chart {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.highcharts-credits {
+  visibility: hidden;
+}
+
+#logo {
+  margin: 0 auto;
+  max-width: 200px;
+}
+
+#_table {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+#tableDiv {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+td {
+  text-align: right;
+}

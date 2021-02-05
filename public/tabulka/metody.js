@@ -421,15 +421,19 @@ function FormatujCislo(num) {
 function UpravDataProGraf(mandatyStran) {
   let dataProGraf = [];
 
+  mandatyStran.forEach((s) => {
+    console.log(s);
+  });
+
   while (mandatyStran.length > 0) {
     let maxIndex = 0;
     let max = 0;
     let strana = [];
 
     for (let index = 0; index < mandatyStran.length; index++) {
-      if (mandatyStran[index].mandaty > max) {
+      if (mandatyStran[index].hlasyCelkem > max) {
         maxIndex = index;
-        max = mandatyStran[index].mandaty;
+        max = mandatyStran[index].hlasyCelkem;
       }
     }
 
@@ -440,7 +444,7 @@ function UpravDataProGraf(mandatyStran) {
       strana.mandaty,
       strana.barva,
       strana.nazev,
-      FormatujCislo(strana.hlasyNaMandat),
+      strana.hlasyCelkem,
     ];
 
     if (strana.mandaty > 0) {
@@ -481,8 +485,20 @@ function NikdoNepostoupil(data) {
   return data.strany.length == 0;
 }
 
-function createTable(headData, tableData) {
-  var table = document.createElement("table");
+function ZobrazTabulku(headData, tableData) {
+  var table = document.getElementById("_table");
+  var rows = table.getElementsByTagName("tr");
+
+  if (rows.length > 0) {
+    table.deleteRow(0);
+    for (var i = rows.length - 1; i >= 0; i++) {
+      table.deleteRow(i);
+    }
+  }
+
+  table.deleteTHead();
+  table.deleteTBody();
+
   var tableHead = document.createElement("thead");
   var tableBody = document.createElement("tbody");
 
@@ -509,8 +525,81 @@ function createTable(headData, tableData) {
 
   table.appendChild(tableHead);
   table.appendChild(tableBody);
+}
 
-  var tableDiv = document.getElementById("_table");
+class TableCsv {
+  /**
+   * @param {HTMLTableElement} root The table element which will display the CSV data.
+   */
+  constructor(root) {
+    this.root = root;
+  }
 
-  tableDiv.appendChild(table);
+  /**
+   * Clears existing data in the table and replaces it with new data.
+   *
+   * @param {string[][]} data A 2D array of data to be used as the table body
+   * @param {string[]} headerColumns List of headings to be used
+   */
+  update(data, headerColumns = []) {
+    this.clear();
+    this.setHeader(headerColumns);
+    this.setBody(data);
+  }
+
+  /**
+   * Clears all contents of the table (incl. the header).
+   */
+  clear() {
+    this.root.innerHTML = "";
+  }
+
+  /**
+   * Sets the table header.
+   *
+   * @param {string[]} headerColumns List of headings to be used
+   */
+  setHeader(headerColumns) {
+    this.root.insertAdjacentHTML(
+      "afterbegin",
+      `
+            <thead>
+                <tr>
+                    ${headerColumns.map((text) => `<th>${text}</th>`).join("")}
+                </tr>
+            </thead>
+        `
+    );
+  }
+
+  /**
+   * Sets the table body.
+   *
+   * @param {string[][]} data A 2D array of data to be used as the table body
+   */
+  setBody(data) {
+    const rowsHtml = data.map((row) => {
+      return `
+                <tr>
+                    ${row.map((text) => `<td>${text}</td>`).join("")}
+                </tr>
+            `;
+    });
+
+    this.root.insertAdjacentHTML(
+      "beforeend",
+      `
+            <tbody>
+                ${rowsHtml.join("")}
+            </tbody>
+        `
+    );
+  }
+}
+
+const tableRoot = document.querySelector("#_table");
+const tableCsv = new TableCsv(tableRoot);
+
+function NaplnTabulku(dataTabulky, hlavicka) {
+  tableCsv.update(dataTabulky, hlavicka);
 }
