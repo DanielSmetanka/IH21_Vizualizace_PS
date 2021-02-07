@@ -1,0 +1,26 @@
+Kalkulačka volebních metod
+
+Kalkulačku tvoří 3 přepínače. Výběr roku, metody a velikosti klauzule.
+Pod přepínači se nachází interaktivní graf 200 křesel poslanecké sněmovny, které
+se zbarvují dle příslušnosti ke stranám. Pod grafem je dále legenda s
+barvami, názvy stran.
+
+Kalkulačka má 2 verze.
+
+1. verze (dostupná na https://vizualizace-ps.web.app)
+Je jednoduchá a jediná dodatečná informace je počet hlasů na jeden mandát, který se nachází u názvu strany v legendě.
+Vložit kalkulačku do vašeho webu můžete jednoduše pomocí iframu.
+
+<iframe width="100%" height="560" src="https://vizualizace-ps.web.app" frameborder="0"></iframe>
+
+Výška je fixní a to 560px a šířka se přizpůsobí šířce rodičovského elementu 
+do nějž bude iframe vložený (paragraf, článek, webovka, ...) a vyplní ho na 100%.
+
+2. verze (dostupná na https://vizualizace-ps.web.app/tabulka)
+Je komplexnější a pod jednoduchou legendou grafu je obsáhlá tabulka se zajímavými údaji (počet hlasů, mandáty, proporcionalita zastoupení...). 
+Vložit kalkulačku můžete také pomocí iframu.
+
+<iframe width="100%" height="990" src="https://vizualizace-ps.web.app/tabulka" frameborder="0"></iframe>
+
+Výška je fixní a to 990px a šířka se přizpůsobí šířce rodičovského elementu 
+do nějž bude iframe vložený (paragraf, článek, webovka, ...) a vyplní ho na 100%.
