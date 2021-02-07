@@ -20,8 +20,14 @@
 #tableDiv {
   margin: 0 auto;
   max-width: 800px;
+  max-height: 400px;
+  overflow-y: auto;
 }
 
 td {
-  text-align: right;
+  text-align: center;
+}
+
+th {
+  text-align: center;
 }

@@ -415,7 +415,7 @@ function VypoctiMandatyPS(data, rok, klauzule, metoda) {
 }
 
 function FormatujCislo(num) {
-  return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1 ");
+  return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1&nbsp");
 }
 
 function UpravDataProGraf(mandatyStran) {
