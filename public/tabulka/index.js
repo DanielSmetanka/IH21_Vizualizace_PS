@@ -1,6 +1,7 @@
 let rok = 2017;
 let metoda = 10;
 let klauzule = 0.05;
+let obvod = 0;
 let data;
 var width = window.innerWidth > 0 ? window.innerWidth : screen.width;
 let graf = {
@@ -34,7 +35,7 @@ let graf = {
   ],
 };
 
-fetch("./data.json")
+fetch("../data.json")
   .then((resp) => resp.json())
   .then((dataJSON) => {
     data = dataJSON;
@@ -43,6 +44,7 @@ fetch("./data.json")
       rok,
       klauzule,
       metoda,
+      obvod,
       graf,
       width
     );
@@ -66,10 +68,17 @@ function VypoctiMandatyAVykresliGrafATabulku(
   rok,
   klauzule,
   metoda,
+  obvod,
   graf,
   width
 ) {
-  let dataProGrafATabulku = VypoctiMandatyPS(data, rok, klauzule, metoda);
+  let dataProGrafATabulku = VypoctiMandatyPS(
+    data,
+    rok,
+    klauzule,
+    metoda,
+    obvod
+  );
   graf.series[0].data = dataProGrafATabulku;
 
   AktualizujNazev(graf, dataProGrafATabulku.length);
@@ -92,12 +101,41 @@ function AktualizujNazev(graf, dataLenght) {
 
 function ZmenaRoku(element) {
   rok = parseInt(element.value);
-  VypoctiMandatyAVykresliGrafATabulku(data, rok, klauzule, metoda, graf, width);
+  VypoctiMandatyAVykresliGrafATabulku(
+    data,
+    rok,
+    klauzule,
+    metoda,
+    obvod,
+    graf,
+    width
+  );
+}
+
+function ZmenaObvodu(element) {
+  obvod = parseInt(element.value);
+  VypoctiMandatyAVykresliGrafATabulku(
+    data,
+    rok,
+    klauzule,
+    metoda,
+    obvod,
+    graf,
+    width
+  );
 }
 
 function ZmenaMetody(element) {
   metoda = parseInt(element.value);
-  VypoctiMandatyAVykresliGrafATabulku(data, rok, klauzule, metoda, graf, width);
+  VypoctiMandatyAVykresliGrafATabulku(
+    data,
+    rok,
+    klauzule,
+    metoda,
+    obvod,
+    graf,
+    width
+  );
 }
 
 function ZmenaKlauzule(element) {
@@ -106,7 +144,15 @@ function ZmenaKlauzule(element) {
   } else {
     klauzule = parseFloat(element.value) / 100;
   }
-  VypoctiMandatyAVykresliGrafATabulku(data, rok, klauzule, metoda, graf, width);
+  VypoctiMandatyAVykresliGrafATabulku(
+    data,
+    rok,
+    klauzule,
+    metoda,
+    obvod,
+    graf,
+    width
+  );
 }
 
 function VytvorAVykresliTabulku(dataProGrafATabulku, hlasyCelkem) {

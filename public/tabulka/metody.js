@@ -30,6 +30,47 @@ function PridelMandatyPS_Delitel(
   return mandatyStran;
 }
 
+function PridelMandatyPS_Delitel_Celostatni(
+  dataRocnik,
+  prvniCifraRady,
+  increment,
+  klauzule
+) {
+  let data = Kopie(dataRocnik);
+
+  data = AplikujKlauzuli(data, klauzule);
+
+  if (NikdoNepostoupil(data)) {
+    return [];
+  }
+
+  let dataStran = PripravDataStranCelostatni(data);
+
+  let radaDelitelu = VypoctiRaduDelitelu(prvniCifraRady, increment);
+
+  let dataStranSPodili = PridejPodily(dataStran, radaDelitelu, 200);
+
+  let mandatyStran = PridelMandatyObvodu_Delitel(dataStranSPodili, 200);
+
+  mandatyStran = VypoctiPocetHlasuNaMandat(mandatyStran);
+
+  return mandatyStran;
+}
+
+function PripravDataStranCelostatni(dataRocnik) {
+  let data = Kopie(dataRocnik);
+
+  let dataStran = data.strany;
+
+  dataStran.forEach((strana) => {
+    strana.mandaty = 0;
+    strana.zbytekHlasu = 0;
+    strana.hlasyCelkem = strana.hlasy;
+  });
+
+  return dataStran;
+}
+
 function PridelMandatyPS_Kvota(dataRocnik, kvota, klauzule) {
   let data = Kopie(dataRocnik);
 
@@ -61,6 +102,28 @@ function PridelMandatyPS_Kvota(dataRocnik, kvota, klauzule) {
   zbytekMandatu = VypoctiZbytekMandatu(mandatyStran, 200);
 
   mandatyStran = MetodaNejvetsichZbytku(mandatyStran, zbytekMandatu); // 3. skrutinium (metoda nejvetsich zbytku)
+
+  mandatyStran = VypoctiPocetHlasuNaMandat(mandatyStran);
+
+  return mandatyStran;
+}
+
+function PridelMandatyPS_Kvota_Celostatni(dataRocnik, kvota, klauzule) {
+  let data = Kopie(dataRocnik);
+
+  data = AplikujKlauzuli(data, klauzule);
+
+  if (NikdoNepostoupil(data)) {
+    return [];
+  }
+
+  let mandatyStran = PripravDataStranCelostatni(data);
+
+  mandatyStran = VypoctiMandatyVObvodu_Kvota(mandatyStran, 200, kvota);
+
+  let zbytekMandatu = VypoctiZbytekMandatu(mandatyStran, 200);
+
+  mandatyStran = MetodaNejvetsichZbytku(mandatyStran, zbytekMandatu);
 
   mandatyStran = VypoctiPocetHlasuNaMandat(mandatyStran);
 
@@ -334,7 +397,7 @@ function PridelMandatyVKrajich_Delitel(
       mandatyKRozdeleni
     );
 
-    hlasyAMandatyStran_Kraj = PridelMandatyKraje_Delitel(
+    hlasyAMandatyStran_Kraj = PridelMandatyObvodu_Delitel(
       hlasyAMandatyStran_Kraj,
       mandatyKRozdeleni
     );
@@ -348,7 +411,7 @@ function PridelMandatyVKrajich_Delitel(
   return mandatyStran;
 }
 
-function PridelMandatyKraje_Delitel(hlasyAMandatyStran, mandatyKRozdeleni) {
+function PridelMandatyObvodu_Delitel(hlasyAMandatyStran, mandatyKRozdeleni) {
   while (mandatyKRozdeleni > 0) {
     let max = 0;
     let maxIndex = 0;
@@ -377,37 +440,91 @@ function PridejPodily(hlasyAMandatyStran, radaDelitelu, mandatyKRozdeleni) {
     }
   });
 
+  hlasyAMandatyStran.forEach((strana) => {
+    console.log(strana);
+  });
+
   return hlasyAMandatyStran;
 }
 
-function VypoctiMandatyPS(data, rok, klauzule, metoda) {
+function VypoctiMandatyPS(data, rok, klauzule, metoda, obvod) {
   let dataRocnik = PripravDataRocnik(data, rok);
   let mandatyStran = [];
 
-  if (metoda < 10) {
-    mandatyStran = PridelMandatyPS_Kvota(dataRocnik, metoda, klauzule); // Metoda odpovida typu kvoty
-  } else if (metoda <= 30) {
-    let increment = 1;
-    let privniCifra = 1; // D'Hontuv delitel
+  if (obvod == 0) {
+    // Obvody jsou jednotlive kraje
+    if (metoda < 10) {
+      mandatyStran = PridelMandatyPS_Kvota(dataRocnik, metoda, klauzule); // Metoda odpovida typu kvoty
+    } else if (metoda <= 30) {
+      let increment = 1;
+      let privniCifra = 1; // D'Hontuv delitel
 
-    if (metoda == 20) {
-      privniCifra = 1.42; // Modifikovany D'Hontuv delitel
-    } else if (metoda == 30) {
-      privniCifra = 2; // Imperialiho delitel
+      if (metoda == 20) {
+        privniCifra = 1.42; // Modifikovany D'Hontuv delitel
+      } else if (metoda == 30) {
+        privniCifra = 2; // Imperialiho delitel
+      }
+      mandatyStran = PridelMandatyPS_Delitel(
+        dataRocnik,
+        privniCifra,
+        increment,
+        klauzule
+      );
+    } else {
+      if (metoda == 40) {
+        mandatyStran = PridelMandatyPS_Delitel(dataRocnik, 1, 2, klauzule); // Sainte-Lagueuv delitel
+      } else if (metoda == 50) {
+        mandatyStran = PridelMandatyPS_Delitel(dataRocnik, 1.4, 2, klauzule); // Modifikovany Sainte-Lagueuv delitel
+      } else if (metoda == 60) {
+        mandatyStran = PridelMandatyPS_Delitel(dataRocnik, 1, 3, klauzule); // Dansky delitel
+      }
     }
-    mandatyStran = PridelMandatyPS_Delitel(
-      dataRocnik,
-      privniCifra,
-      increment,
-      klauzule
-    );
   } else {
-    if (metoda == 40) {
-      mandatyStran = PridelMandatyPS_Delitel(dataRocnik, 1, 2, klauzule); // Sainte-Lagueuv delitel
-    } else if (metoda == 50) {
-      mandatyStran = PridelMandatyPS_Delitel(dataRocnik, 1.4, 2, klauzule); // Modifikovany Sainte-Lagueuv delitel
-    } else if (metoda == 60) {
-      mandatyStran = PridelMandatyPS_Delitel(dataRocnik, 1, 3, klauzule); // Dansky delitel
+    // Pouze jeden obvod a to cela ČR
+    if (metoda < 10) {
+      mandatyStran = PridelMandatyPS_Kvota_Celostatni(
+        dataRocnik,
+        metoda,
+        klauzule
+      ); // Metoda odpovida typu kvoty
+    } else if (metoda <= 30) {
+      let increment = 1;
+      let privniCifra = 1; // D'Hontuv delitel
+
+      if (metoda == 20) {
+        privniCifra = 1.42; // Modifikovany D'Hontuv delitel
+      } else if (metoda == 30) {
+        privniCifra = 2; // Imperialiho delitel
+      }
+      mandatyStran = PridelMandatyPS_Delitel_Celostatni(
+        dataRocnik,
+        privniCifra,
+        increment,
+        klauzule
+      );
+    } else {
+      if (metoda == 40) {
+        mandatyStran = PridelMandatyPS_Delitel_Celostatni(
+          dataRocnik,
+          1,
+          2,
+          klauzule
+        ); // Sainte-Lagueuv delitel
+      } else if (metoda == 50) {
+        mandatyStran = PridelMandatyPS_Delitel_Celostatni(
+          dataRocnik,
+          1.4,
+          2,
+          klauzule
+        ); // Modifikovany Sainte-Lagueuv delitel
+      } else if (metoda == 60) {
+        mandatyStran = PridelMandatyPS_Delitel_Celostatni(
+          dataRocnik,
+          1,
+          3,
+          klauzule
+        ); // Dansky delitel
+      }
     }
   }
 
