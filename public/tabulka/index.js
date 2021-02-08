@@ -155,6 +155,6 @@ function VytvorAVykresliTabulku(dataProGrafATabulku, hlasyCelkem) {
     "% Mandátů",
     "Hlasy na 1 mandát",
     "Rozdíl mandatů a hlasů",
-    "Index deformace",
+    '<a href="#" data-toggle="tooltip" data-placement="left" title="Index deformace dělí procento mandátů, které strana získala, procentem jejích hlasů. Výsledek 1 značí absolutně poměrné zastoupení dané strany. Vyšší hodnota indexu pak značí nadreprezentaci strany, zatímco hodnota nižší než 1 ukazuje, že je strana podreprezentovaná.">Index deformace</a>',
   ]);
 }

@@ -421,10 +421,6 @@ function FormatujCislo(num) {
 function UpravDataProGraf(mandatyStran) {
   let dataProGraf = [];
 
-  mandatyStran.forEach((s) => {
-    console.log(s);
-  });
-
   while (mandatyStran.length > 0) {
     let maxIndex = 0;
     let max = 0;
@@ -602,4 +598,7 @@ const tableCsv = new TableCsv(tableRoot);
 
 function NaplnTabulku(dataTabulky, hlavicka) {
   tableCsv.update(dataTabulky, hlavicka);
+  $(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
 }
