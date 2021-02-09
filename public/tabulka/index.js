@@ -35,7 +35,7 @@ let graf = {
   ],
 };
 
-fetch("../data.json")
+fetch("data.json")
   .then((resp) => resp.json())
   .then((dataJSON) => {
     data = dataJSON;

@@ -11,3 +11,12 @@
   margin: 0 auto;
   max-width: 200px;
 }
+
+.popisek {
+  width: 23mm;
+  display: inline;
+}
+
+.prepinace {
+  max-width: 800px;
+}

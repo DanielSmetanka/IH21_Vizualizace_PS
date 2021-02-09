@@ -64,7 +64,6 @@ function PripravDataStranCelostatni(dataRocnik) {
 
   dataStran.forEach((strana) => {
     strana.mandaty = 0;
-    strana.zbytekHlasu = 0;
     strana.hlasyCelkem = strana.hlasy;
   });
 
@@ -438,10 +437,6 @@ function PridejPodily(hlasyAMandatyStran, radaDelitelu, mandatyKRozdeleni) {
     for (let i = 0; i < mandatyKRozdeleni; i++) {
       strana.podily.push(strana.hlasy / radaDelitelu[i]);
     }
-  });
-
-  hlasyAMandatyStran.forEach((strana) => {
-    console.log(strana);
   });
 
   return hlasyAMandatyStran;

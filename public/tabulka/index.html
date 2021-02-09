@@ -23,10 +23,10 @@
   <body>
     <div class="m-1 p-0">
       <div class="d-flex justify-content-center">
-        <div class="row m-0">
-          <div class="input-group m-1">
+        <div class="row m-0 prepinace">
+          <div class="input-group mt-1 mb-1">
             <div class="input-group-prepend">
-              <label class="input-group-text" for="rok">Rok</label>
+              <label class="input-group-text popisek" for="rok">Rok</label>
             </div>
             <select class="custom-select" id="rok" onchange="ZmenaRoku(this)">
               <!-- <option value="2021">2021</option>  -->
@@ -39,9 +39,24 @@
               <option value="1996">1996</option>
             </select>
           </div>
-          <div class="input-group m-1">
+          <div class="input-group mt-1 mb-1">
             <div class="input-group-prepend">
-              <label class="input-group-text" for="metoda">Metoda</label>
+              <label class="input-group-text popisek" for="obvod">Obvod</label>
+            </div>
+            <select
+              class="custom-select"
+              id="obvod"
+              onchange="ZmenaObvodu(this)"
+            >
+              <option value="0">Jednotlivé kraje</option>
+              <option value="1">Celá ČR</option>
+            </select>
+          </div>
+          <div class="input-group mt-1 mb-1">
+            <div class="input-group-prepend">
+              <label class="input-group-text popisek" for="metoda"
+                >Metoda</label
+              >
             </div>
             <select
               class="custom-select"
@@ -60,22 +75,9 @@
               <option value="2">Imperialiho kvóta</option>
             </select>
           </div>
-          <div class="input-group m-1">
+          <div class="input-group mt-1 mb-1">
             <div class="input-group-prepend">
-              <label class="input-group-text" for="obvod">Obvod</label>
-            </div>
-            <select
-              class="custom-select"
-              id="obvod"
-              onchange="ZmenaObvodu(this)"
-            >
-              <option value="0">Jednotlivé kraje</option>
-              <option value="1">Celá ČR</option>
-            </select>
-          </div>
-          <div class="input-group m-1">
-            <div class="input-group-prepend">
-              <span class="input-group-text">Klauzule</span>
+              <span class="input-group-text popisek">Klauzule</span>
             </div>
             <input
               class="form-control"

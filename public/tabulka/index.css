@@ -1,6 +1,6 @@
 #chart {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 900px;
 }
 
 .highcharts-credits {
@@ -14,12 +14,12 @@
 
 #_table {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 900px;
 }
 
 #tableDiv {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 900px;
   max-height: 400px;
   overflow-y: auto;
 }
@@ -30,4 +30,13 @@ td {
 
 th {
   text-align: center;
+}
+
+.popisek {
+  width: 23mm;
+  display: inline;
+}
+
+.prepinace {
+  max-width: 900px;
 }
